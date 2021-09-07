@@ -1,0 +1,9 @@
+img{
+    width: 15%;
+}
+.media-body>a
+{
+    font-weight: bold;
+    font-size: 16pt;
+    color: black;
+}

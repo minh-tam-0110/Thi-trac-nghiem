@@ -1,0 +1,125 @@
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half -->
+            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="login d-flex align-items-center py-5">
+
+                    <!-- Demo content-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">ĐĂNG KÝ</h3>
+                                <p class="text-muted mb-4">Hãy đăng ký để dùng sử dụng ứng dụng của chúng tôi.</p>
+
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <input 
+                                            ng-model = "studentR.fullname"
+                                            id="fullname" 
+                                            type="text" 
+                                            placeholder="Họ và tên" 
+                                            required=""
+                                            autofocus="" 
+                                            class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group mb-3">
+                                        <input 
+                                            ng-model = "studentR.username"
+                                            id="username" 
+                                            type="text" 
+                                            placeholder="Tên đăng nhập" 
+                                            required=""
+                                            autofocus="" 
+                                            class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group mb-3">
+                                        <input 
+                                            ng-model = "studentR.password"
+                                            id="password" 
+                                            type="password" 
+                                            placeholder="Mật khẩu" 
+                                            required=""
+                                            class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group mb-3">
+                                        <input 
+                                            ng-model = "studentR.repassword"
+                                            id="repassword" 
+                                            type="password"
+                                            placeholder="Nhập lại mật khẩu" 
+                                            required=""
+                                            class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group mb-3">
+                                        <input 
+                                            ng-model = "studentR.email"
+                                            id="email" 
+                                            type="email" 
+                                            placeholder="Email" 
+                                            required=""
+                                            class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <!--  -->
+                                    <label class="bg-white indigo-text rounded px-2" for=""> <i class="fas fa-transgender"></i>Giới tính:</label>
+                                    <div class="form-check form-check-inline">
+                                        <input ng-model="studentR.gender" type="radio" class="form-check-input" id="gender" name="gender" value="true">
+                                        <label class="form-check-label indigo-text" for="gender">Nam</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input ng-model="studentR.gender" type="radio" class="form-check-input" id="gender2" name="gender" value="false">
+                                        <label class="form-check-label indigo-text" for="gender2">Nữ</label>
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group mb-3">
+                                        <input
+                                            ng-model = "studentR.birthday" 
+                                            id="brithday" 
+                                            type="date" 
+                                            placeholder="Ngày sinh (yyyy-mm-dd)" 
+                                            pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                                            required=""
+                                            class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group mb-3">
+                                        <input
+                                            ng-model = "studentR.schoolfee"
+                                            placeholder="Học phí"
+                                            type="number"
+                                            min="0"
+                                            class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <!--  -->
+                                    <button 
+                                        ng-click = "dangky()"
+                                        type="submit" 
+                                        class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">
+                                        Đăng ký
+                                    </button>
+                                    <button type="submit"
+                                        class="btn btn-danger btn-block text-uppercase mb-2 rounded-pill shadow-sm" disabled>
+                                        Đăng ký với Google</button>
+                                    <div class="text-center d-flex justify-content-between mt-4">
+                                        <p>Snippet by Huỳnh Minh Tâm_Nguyễn Trần Văn Thuận</p>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- End -->
+
+                </div>
+            </div><!-- End -->
+
+        </div>
+    </div>
+</body>

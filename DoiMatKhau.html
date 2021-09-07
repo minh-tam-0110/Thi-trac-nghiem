@@ -1,0 +1,65 @@
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half -->
+            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+    
+    
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="login d-flex align-items-center py-5">
+    
+                    <!-- Demo content-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">ĐỔI MẬT KHẨU</h3>
+                                <p class="text-muted mb-4">Bạn điền Email đã đăng ký để khôi phục mật khẩu nhé..</p>
+                                <p class="text-center">Tài khoản: {{student.username}}</p>
+                                <form name="formDoiMK">
+                                    <div class="form-group mb-3">
+                                        <input 
+                                            ng-model = "oldpassword"
+                                            id="oldpassword" 
+                                            name="oldpassword"
+                                            type="password" 
+                                            placeholder="Mật khảu cũ" 
+                                            required="" 
+                                            autofocus="" 
+                                            class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input 
+                                            ng-model = "studentR.password"
+                                            id="password" 
+                                            name="password"
+                                            type="password" 
+                                            placeholder="Mật khẩu mới" 
+                                            required="" 
+                                            autofocus="" 
+                                            class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input 
+                                            ng-model = "renewpassword"
+                                            id="renewpassword" 
+                                            name="renewpassword"
+                                            type="password" 
+                                            placeholder="Mật lại khẩu mới" 
+                                            required="" 
+                                            autofocus="" 
+                                            class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <button ng-click = "doiMk()" type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Đổi mật khẩu</button>
+                                    <div class="text-center d-flex justify-content-between mt-4"><p>Snippet by Huỳnh Minh Tâm_Nguyễn Trần Văn Thuận</p></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- End -->
+    
+                </div>
+            </div><!-- End -->
+    
+        </div>
+    </div>
+  </body>

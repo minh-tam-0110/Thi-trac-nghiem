@@ -1,0 +1,80 @@
+<div class="card border border-success">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card-body ml-2">
+                    <h3 class="card-title"> Mã Môn : Xây Dựng Trang Web</h3>
+                    <p class="card-text ml-2" style="font-size: 16pt;"><span style="font-size: 20pt;">Điểm : <span>{{score}}/10</span></p>
+                    <div ng-show="!inProgess">
+                        <button type="button" class="btn btn-success ml-2" style="font-size:larger;" ng-click="start() ">Làm Trắc Nghiệm</button>
+                    </div>
+                    <div ng-show="quitOver">
+                        <button ng-show="inProgess" type="button" class="btn btn-success ml-2" style="font-size:larger;" ng-click="">Đã Hoàn Thành !!</button>
+                        <button ng-show="inProgess" type="button" class="btn btn-danger ml-2" style="font-size:larger;" ng-click="reset()">Bạn Có Muốn Làm Lại !!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col m-auto p-auto text-center">
+                <h3>Thời Gian Làm Bài : <span class="time" style="color: orangered; font-size: 30pt;" id="time"> 15:00 </span></h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br>
+<div class="card" ng-show="inProgess">
+    <div ng-show="!quitOver">
+        <div class="card-header">
+            <div class="row">
+                <div class="col text-left pt-1">
+                    <h4><i class="fas fa-clipboard-list"></i> Xây Dựng Trang Web</h4>
+                </div>
+                <div class="col text-right borders">
+                    <div ng-show="AnswerMode">
+                        <button ng-click="checkAnswer()" class="btn btn-success" style="font-size: 20px;">Kết Thúc</button>
+                    </div>
+                    <div ng-show="!AnswerMode">
+                        <span ng-show="corretAns" class="mr-3" style="font-size: 18pt;color: rgb(36, 59, 1);">Đáp Án Đúng !!</span>
+                        <span ng-show="!corretAns" class="mr-3" style="font-size: 18pt;color: red;">Đáp Án Sai !!</span>
+                        <button ng-click="nextQuestion()" class="btn btn-success" style="font-size: 20px;">Câu Tiếp</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="card-text"></div>
+            <div class="Cau_Hoi">
+                <h4 style="color: black;min-height: 60px;"> <i class="far fa-question-circle"></i> {{id+1}}. {{question}}</h4>
+                <hr>
+            </div>
+            <div class="card-body ml-5" style="min-height: 300px; max-height: 300px;">
+                <div class="form-check" ng-repeat="option in options">
+                    <label class="form-check-label p-auto" for="Radios1">
+                                    <input class="form-check-input" type="radio" name="answer"  value="{{option.Id}}">
+                                        <h4 class="m-auto" style="color: black; font-size: 15pt;">{{option.Text}}</h4>
+                                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-muted ">
+            <div class="row">
+                <div class="col text-left pt-1" ng-show="!AnswerMode" style="color: green;font-size: 20pt; font-style: oblique;">
+                    <span ng-show="corretAns" class="mr-3" style="font-size: 18pt;color: green;">Đáp Án Đúng !!</span>
+                    <span ng-show="!corretAns" class="mr-3" style="font-size: 18pt;color: red;">Đáp Án Sai !!</span>
+                </div>
+                <div class="col text-right pt-1" style="color: green;font-size: 20pt; font-style: oblique;">
+                    Điểm : <span>{{score}}/10</span>
+                </div>
+
+                <!-- <div class="col text-right borders">
+                    <button ng-click="preQuestion()" type="button" class="btn btn-success ml-2" style="font-size:large;">Câu Trước</button>
+                    <button ng-click="nextQuestion()" type="button" class="btn btn-success ml-2" style="font-size:large;">Câu Tiếp</button>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+</div>

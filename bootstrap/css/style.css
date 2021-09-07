@@ -1,0 +1,83 @@
+        body {
+            background-color: whitesmoke;
+        }
+        
+        .logo>img {
+            width: 150px;
+            height: auto;
+        }
+        
+        li>a {
+            font-size: 15pt;
+        }
+        
+        .dropdown-menu {
+            width: 1050px;
+        }
+        
+        .dropdown-menu>.container>.row>.col-sm>a:hover {
+            background-color: orange;
+        }
+        
+        .dropdown-menu>.container>.row>.col-sm>a {
+            font-size: 14pt;
+        }
+        
+        .navbar-nav>.nav-item>a {
+            font-size: 13pt;
+            color: white;
+        }
+        
+        .nav>.nav-item>a {
+            color: azure;
+            font-size: 14pt;
+        }
+        
+        .hover>a:hover {
+            font-size: 14pt;
+            color: orange;
+        }
+        
+        .hovers>li>a {
+            color: black;
+            font-size: 13pt;
+        }
+        
+        .hovers>li>a:hover {
+            text-decoration: none;
+            color: orange;
+        }
+        
+        .imgs>img {
+            margin: 0;
+            padding: 0;
+            align-self: center;
+            width: 220px;
+        }
+        
+        footer {
+            background-color: black;
+            color: rgb(253, 253, 253);
+        }
+        
+        .ThongTin>h3,
+        h4 {
+            color: orange;
+        }
+        
+        .navbar-nav>li>a {
+            font-size: 20pt;
+        }
+        /* Kiemtra */
+        
+        h5 {
+            color: green;
+        }
+        
+        .m {
+            margin-left: 20px;
+        }
+        
+        .borders .btn {
+            border-radius: 10px;
+        }
